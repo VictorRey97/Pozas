@@ -1,0 +1,89 @@
+nav {
+    background-color: rgb(214, 104, 214);
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 20px;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu {
+        display: block;
+        margin: 0;
+    }
+
+    .menu .submenu {
+        position: static;
+    }
+}
+@media (max-width: 600px) {
+    .menu {
+        display: block;
+        margin: 0;
+    }
+
+    .menu .submenu {
+        position: static;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu {
+        display: block;
+        margin: 0;
+    }
+
+    .menu .submenu {
+        position: static;
+    }
+}
+@media (max-width: 1200px) {
+    .menu {
+        display: block;
+        margin: 0;
+    }
+
+    .menu .submenu {
+        position: static;
+    }
+}
+.menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(211, 78, 211);
+    padding: 10px;
+}
+
+.menu li:hover .submenu {
+    display: block; /* Mostrar el submenú al pasar el cursor sobre el elemento del menú */
+}
+
+.menu .submenu li {
+    display: block;
+    margin: 5px 0;
+}
+
+.menu .submenu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+}
